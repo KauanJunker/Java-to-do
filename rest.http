@@ -1,0 +1,31 @@
+POST http://localhost:8080/users/
+Content-Type: application/json
+
+{
+  "name": "kauan junker",
+  "username": "kauan",
+  "password": "peitos"
+}
+
+###
+POST http://localhost:8080/tasks/
+Content-Type: application/json
+
+{
+  "title": "Peitos daquela dlc",
+  "description": "Quero chupa-los o dia inteirinho",
+  "priority": "ALTISSIMA",
+  "startAt": "2023-10-14T12:40:00",
+  "endAt": "2023-10-14T16:40:00",
+  "idUser": "693d69cb-bc69-4718-bb3e-9c8f97c82325"
+}
+
+###
+POST http://localhost:8080/tasks/
+Authorization: Basic base64-user-password
+Content-Type: application/json
+
+{
+  "user": "zequinha",
+  "password": "zequinhamsm"
+}
